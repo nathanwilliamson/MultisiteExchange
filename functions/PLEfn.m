@@ -37,7 +37,7 @@ function [Wnorm,Vmnorm,Wouab,Vmouab]=PLEfn(nao,ko,clo,xo)
 %ouab=[0,0.1,0.5,1]; %%%simulating differnet concentrations of ouabain and their time to effect
 ouab=0;
 
-R=25.69*1e-3; F=96485;  % R has been divided by T [J/mol], Faraday's constant [C/mol]=[J/mol volt]
+R=25.69*1e-3; F=96485;  % R (RT/F) in Volts, Faraday's constant C/mol
 n=1200; % # points to plot 
 Vm=1:n-1; K=1:n-1; Na=1:n-1; Cl=1:n-1; W=1:n-1; X=1:n-1; time=1:n-1;%create plotting arrays
 time(1)=0; dt=1e-3;  %zero time, dt time step
